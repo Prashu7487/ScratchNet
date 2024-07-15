@@ -1,5 +1,5 @@
 import numpy as np
-from CustomNeuralNetwork.layer import Layer
+from ScratchNet.layer import Layer
 import warnings
 
 

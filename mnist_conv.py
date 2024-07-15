@@ -2,12 +2,12 @@ import numpy as np
 from keras.datasets import mnist
 from keras.utils import np_utils
 
-from CustomNeuralNetwork.dense import Dense
-from CustomNeuralNetwork.convolutional import Convolutional
-from CustomNeuralNetwork.reshape import Reshape
-from CustomNeuralNetwork.activations import Sigmoid
-from CustomNeuralNetwork.losses import binary_cross_entropy, binary_cross_entropy_prime
-from CustomNeuralNetwork.network import train, predict
+from ScratchNet.dense import Dense
+from ScratchNet.convolutional import Convolutional
+from ScratchNet.reshape import Reshape
+from ScratchNet.activations import Sigmoid
+from ScratchNet.losses import binary_cross_entropy, binary_cross_entropy_prime
+from ScratchNet.network import train, predict
 
 
 def preprocess_data(x, y, limit):

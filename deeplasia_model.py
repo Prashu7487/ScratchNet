@@ -4,14 +4,14 @@ import numpy as np
 import os
 from PIL import Image
 from sklearn.model_selection import train_test_split
-from CustomNeuralNetwork.dense import Dense
-from CustomNeuralNetwork.convolutional import Convolutional
-from CustomNeuralNetwork.reshape import Reshape
-from CustomNeuralNetwork.activations import ReLU, Tanh, Sigmoid, Softmax
-from CustomNeuralNetwork.losses import mse, mse_prime
-from CustomNeuralNetwork.network import train, predict
-from CustomNeuralNetwork.poolfilters import MaxPooling2D
-from CustomNeuralNetwork.normalize import Normalize
+from ScratchNet.dense import Dense
+from ScratchNet.convolutional import Convolutional
+from ScratchNet.reshape import Reshape
+from ScratchNet.activations import ReLU, Tanh, Sigmoid, Softmax
+from ScratchNet.losses import mse, mse_prime
+from ScratchNet.network import train, predict
+from ScratchNet.poolfilters import MaxPooling2D
+from ScratchNet.normalize import Normalize
 
 
 # Data loading and preprocessing

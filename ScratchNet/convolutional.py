@@ -1,6 +1,6 @@
 import warnings
 import numpy as np
-from CustomNeuralNetwork.layer import Layer
+from ScratchNet.layer import Layer
 from scipy import signal
 
 

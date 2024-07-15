@@ -1,6 +1,6 @@
 import numpy as np
-from CustomNeuralNetwork.layer import Layer
-from CustomNeuralNetwork.activation import Activation
+from ScratchNet.layer import Layer
+from ScratchNet.activation import Activation
 
 
 class ReLU(Activation):

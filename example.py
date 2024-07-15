@@ -3,10 +3,10 @@ from sklearn.datasets import load_iris
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 
-from CustomNeuralNetwork.dense import Dense
-from CustomNeuralNetwork.activations import Sigmoid
-from CustomNeuralNetwork.losses import binary_cross_entropy, binary_cross_entropy_prime
-from CustomNeuralNetwork.network import train, predict
+from ScratchNet.dense import Dense
+from ScratchNet.activations import Sigmoid
+from ScratchNet.losses import binary_cross_entropy, binary_cross_entropy_prime
+from ScratchNet.network import train, predict
 
 # Load Iris dataset
 iris = load_iris()

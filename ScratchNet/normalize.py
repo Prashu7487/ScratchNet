@@ -1,4 +1,4 @@
-from CustomNeuralNetwork.layer import Layer
+from ScratchNet.layer import Layer
 import numpy as np
 
 

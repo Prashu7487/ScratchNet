@@ -2,10 +2,10 @@ import numpy as np
 from keras.datasets import mnist
 from keras.utils import np_utils
 
-from CustomNeuralNetwork.dense import Dense
-from CustomNeuralNetwork.activations import Tanh
-from CustomNeuralNetwork.losses import mse, mse_prime
-from CustomNeuralNetwork.network import train, predict
+from ScratchNet.dense import Dense
+from ScratchNet.activations import Tanh
+from ScratchNet.losses import mse, mse_prime
+from ScratchNet.network import train, predict
 
 
 def preprocess_data(x, y, limit):
