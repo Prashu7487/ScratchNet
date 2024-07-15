@@ -1,16 +1,3 @@
-# Neural Network From Scratch
-
-This code is partially taken from TheIndependentCode,then extra layers, activations, functionalities added to generalize model building 
-
-# Try it!
-
-```
-python3 example.py
-```
-
-# Example
-
-```
 import numpy as np
 from sklearn.datasets import load_iris
 from sklearn.preprocessing import StandardScaler
@@ -64,5 +51,3 @@ for x, y in zip(X_test, Y_test):
 # Calculate and print accuracy
 accuracy = correct_predictions / total_predictions
 print(f'Accuracy: {accuracy:.2f}')
-
-```

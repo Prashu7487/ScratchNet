@@ -22,7 +22,7 @@ def load_images_from_directory(img_path, data):
     genders = []
 
     # Randomly sample 1500 records from the data
-    data = data.sample(25, random_state=42)
+    data = data.sample(50, random_state=42)
 
     for index, row in data.iterrows():
         ID, age, gender = row['id'], row['boneage'], row['male']
@@ -56,7 +56,7 @@ train_images, test_images, train_ages, test_ages = train_test_split(images, ages
 # print(train_images.shape)
 train_images = train_images/255.0   # normalize images in the array
 
-# random outlier img
+# random outlier img to test the difference in output
 img = Image.open(r"C:\Users\pm748\OneDrive\Pictures\Screenshots\Screenshot 2024-05-23 231148.png")
 img = img.resize((256, 256))
 img_array = np.array(img)
@@ -88,7 +88,7 @@ model = [
     # ReLU(),  # Activation function
     Dense(1000, 100),  # Input size: 1000, Output size: 100
     Normalize(),
-    # ReLU(),  # Activation function
+    ReLU(),  # Activation function
     Dense(100, 1),  # Input size: 100, Output size: 1
     # ReLU()
 ]
@@ -96,7 +96,7 @@ model = [
 
 start_time = time.time()
 print("Training starts...")
-train(model, mse, mse_prime, train_images, train_ages, epochs=5, learning_rate=0.01)
+train(model, mse, mse_prime, train_images, train_ages, epochs=100, learning_rate=0.01)
 end_training_time = time.time()
 
 print("Testing starts...")
