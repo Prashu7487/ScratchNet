@@ -10,7 +10,8 @@ python3 example.py
 
 # Example
 
-```
+```python
+
 import numpy as np
 from sklearn.datasets import load_iris
 from sklearn.preprocessing import StandardScaler
